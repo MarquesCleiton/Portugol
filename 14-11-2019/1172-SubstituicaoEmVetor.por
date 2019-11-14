@@ -1,24 +1,25 @@
 programa
 {
 	
-		funcao inicio()
+	funcao inicio()
 	{
-		inteiro n = 100, cont
-		real x[100]
+		inteiro n = 10, cont
+		inteiro x[10]
 
-		para (cont = 0; cont<n; cont++)
+		para (cont = 0; cont<=2; cont++)
 		{	
 			leia(x[cont])
+			se(x[cont] <=0)
+			{
+				x[cont] = 1
+			}
 		}
 
+		escreva("\n")
 		
 		para (cont = 0; cont<n; cont++)
 		{
-			se(x[cont] <=	10)
-			{
-				escreva("A[",cont,"] = ", x[cont],"\n")
-			}
-			
+			escreva(x[cont],"\n")
 			
 		}
 	}
@@ -28,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 51; 
+ * @POSICAO-CURSOR = 195; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
