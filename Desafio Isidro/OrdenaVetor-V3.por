@@ -10,9 +10,9 @@ programa
 			leia(x[i])
 		}
 		
-		para(i = 0; i<n-1;i++)
+		para(i = 0; i<n;i++)
 		{
-			para(i2 = 0; i2<n; i2++)
+			para(i2 = 0; i2<n-1; i2++)
 			{
 				se(x[i2]>x[i2+1])
 				{
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 272; 
+ * @POSICAO-CURSOR = 135; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
