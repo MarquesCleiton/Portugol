@@ -18,12 +18,12 @@ programa
 				{
 					aux = x[cont]
 					x[cont] = x[cont2]
-					x[cont2] = aux					
+					x[cont2] = aux				
 				}
 				escreva(x[cont2]," ")
 			}
 			escreva("\n")
-		}
+		}		
 		para(cont = 0; cont<n;cont++)
 		{
 			escreva(x[cont]," ")
@@ -35,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 246; 
+ * @POSICAO-CURSOR = 281; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
