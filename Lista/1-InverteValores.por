@@ -1,27 +1,17 @@
 programa
 {
+	inclua biblioteca Tipos
 	
 	funcao inicio()
 	{
-		inteiro n = 10, cont
-		inteiro x[10]
-
-		para (cont = 0; cont<n; cont++)
-		{	
-			leia(x[cont])
-			se(x[cont] <=0)
-			{
-				x[cont] = 1
-			}
-		}
-
-		escreva("\n")
-		
-		para (cont = 0; cont<n; cont++)
-		{
-			escreva(x[cont],"\n")
-			
-		}
+		inteiro num, inverte 
+		leia (num)                      
+		inverte = (num%10)*100          // extrai o ultimo algarismo
+		num = num/10              
+		inverte = inverte + (num%10)*10
+		num =(num/10)
+		inverte = inverte + (num%10)
+		escreva("\n",inverte)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 197; 
+ * @POSICAO-CURSOR = 208; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

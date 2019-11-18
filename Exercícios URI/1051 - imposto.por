@@ -1,26 +1,25 @@
 programa
 {
-	
+				
 	funcao inicio()
 	{
-		inteiro n = 10, cont
-		inteiro x[10]
-
-		para (cont = 0; cont<n; cont++)
-		{	
-			leia(x[cont])
-			se(x[cont] <=0)
-			{
-				x[cont] = 1
-			}
-		}
-
-		escreva("\n")
+		real sal, taxa
+		leia(sal)
 		
-		para (cont = 0; cont<n; cont++)
+
+		se(sal>4500)
 		{
-			escreva(x[cont],"\n")
-			
+			taxa = (((sal-4500)*28)/100) + (((1500)*18)/100) + (((1000)*8)/100)
+			escreva("taxa: ", taxa)
+		}
+		senao se(sal>3000 e sal<=4500)
+		{ 
+			taxa = (((sal-3000)*18)/100) + (((1000)*8)/100)
+			escreva("taxa: ", taxa)
+		}
+		senao
+		{
+			escreva("isento")
 		}
 	}
 }
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 197; 
+ * @POSICAO-CURSOR = 10; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
