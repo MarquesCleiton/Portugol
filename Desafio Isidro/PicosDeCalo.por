@@ -3,31 +3,32 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n = 10, x[10], i, i2, aux
-		
-		para(i = 0; i<n;i++)
+		real temp[10]
+		inteiro n = 10, i, qtd = 0
+
+		escreva("Digite ", n, " amostras temperaturas\n")
+
+		para(i = 0; i < n ;i++)
 		{
-			leia(x[i])
-	5
-	}
+			leia(temp[i])
+		}
 		
-		para(i = 0; i<n;i++)
+		para(i = 1; i < n-1 ;i++)
 		{
-			para(i2 = 0; i2<n-1; i2++)
+			se( temp[i]>temp[i-1] e temp[i]>temp[i+1])
 			{
-				se(x[i2]>x[i2+1])
-				{
-				aux = x[i2]
-				x[i2] = x[i2+1]
-				x[i2+1] = aux
-				}
-			}			
+				qtd++
+			}
 		}
-				
-		para(i = 0; i<n;i++)
+		se(temp[0]>temp[1])
 		{
-			escreva(x[i]," ")
+			qtd++
 		}
+		se(temp[n-1]>temp[n-2])
+		{
+			qtd++
+		}
+		escreva("A sequencia de ", n, " medições possui ", qtd, " picos de temperatuda")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -35,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 55; 
+ * @POSICAO-CURSOR = 349; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

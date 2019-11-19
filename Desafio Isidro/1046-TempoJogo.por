@@ -1,21 +1,23 @@
 programa
 {
-	
 	funcao inicio()
 	{
-		inteiro di, hi, mi, si, df, hf, mf, sf, st
-		
-		leia(di)
+		inteiro hi, hf, ht
 		leia(hi)
-		leia(mi)
-		leia(si)
-		leia(df)
 		leia(hf)
-		leia(mf)
-		leia(sf)
+		ht = hf - hi
+
+		se(ht<0){
+			ht = ht + 24 
+			escreva("\nO JOGO DUROU ",ht," HORA(S)")
+		}
+		senao{
+			escreva("\nO JOGO DUROU ",ht," HORA(S)")
+		}
 		
-		st = ((df-di)*24*3600)-(hi*3600+mi*60+si)+(hf*3600+mf*60+sf)
-		
+		se(hi == hf){
+			escreva("\nO JOGO DUROU 24 HORA(S)")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 10; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

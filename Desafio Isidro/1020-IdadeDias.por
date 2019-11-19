@@ -3,19 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro di, hi, mi, si, df, hf, mf, sf, st
+		inteiro diasv
+		inteiro anos, meses, dias
+		leia(diasv)
 		
-		leia(di)
-		leia(hi)
-		leia(mi)
-		leia(si)
-		leia(df)
-		leia(hf)
-		leia(mf)
-		leia(sf)
-		
-		st = ((df-di)*24*3600)-(hi*3600+mi*60+si)+(hf*3600+mf*60+sf)
-		
+		anos = (diasv/365)
+		meses =(diasv%365)/30
+		dias = (diasv%365)%30
+		escreva(anos, "\n")
+		escreva(meses, "\n")
+		escreva(dias, "\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 138; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

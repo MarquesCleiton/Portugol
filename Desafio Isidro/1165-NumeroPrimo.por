@@ -3,19 +3,25 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro di, hi, mi, si, df, hf, mf, sf, st
+		inteiro num, div = 0, i
+		leia (num)
 		
-		leia(di)
-		leia(hi)
-		leia(mi)
-		leia(si)
-		leia(df)
-		leia(hf)
-		leia(mf)
-		leia(sf)
+		para(i = 1; i<=num; i++)
+		{
+			se (num%i==0)
+			{
+				div = div++
+			}
+		}
 		
-		st = ((df-di)*24*3600)-(hi*3600+mi*60+si)+(hf*3600+mf*60+sf)
-		
+		se(div == 2)
+		{
+			escreva(num, " eh primo")
+		}
+		senao
+		{
+			escreva(num, " não eh primo")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 193; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
